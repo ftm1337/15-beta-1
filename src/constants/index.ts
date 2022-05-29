@@ -8,7 +8,7 @@ export const ROUTER_ADDRESS = '0x4B4c5D87fa1aFE3365Fa1ee9cb6c38cC6FAB8fEf'
 // a list of tokens by chain
 type ChainTokenList = {
   readonly [chainId in ChainId]: Token[]
-}0x4B4c5D87fa1aFE3365Fa1ee9cb6c38cC6FAB8fEf
+}
 
 //export const DAI = new Token(ChainId.MAINNET, '0x6B175474E89094C44Da98b954EedeAC495271d0F', 18, 'DAI', 'Dai Stablecoin')
 export const USDC = new Token(ChainId.MAINNET, '0xEa1199d50Ee09fA8062fd9dA3D55C6F90C1bABd2', 6, 'USDC', 'USD//C')
