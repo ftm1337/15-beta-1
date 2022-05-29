@@ -11,7 +11,7 @@ type ChainTokenList = {
 }
 
 export const DAI = new Token(ChainId.ROPSTEN, '0x6B175474E89094C44Da98b954EedeAC495271d0F', 18, 'DAI', 'Dai Stablecoin')
-export const USDC = new Token(ChainId.MAINNET, '0xEa1199d50Ee09fA8062fd9dA3D55C6F90C1bABd2', 6, 'USDC', 'USD//C')
+export const USDC = new Token(ChainId.MAINNET, '0xEa1199d50Ee09fA8062fd9dA3D55C6F90C1bABd2', 6, 'USDC', 'Circle USD / RelayChain Bridged')
 export const USDT = new Token(ChainId.ROPSTEN, '0xdAC17F958D2ee523a2206206994597C13D831ec7', 6, 'USDT', 'Tether USD')
 export const COMP = new Token(ChainId.ROPSTEN, '0xc00e94Cb662C3520282E6f5717214004A7f26888', 18, 'COMP', 'Compound')
 export const MKR = new Token(ChainId.ROPSTEN, '0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2', 18, 'MKR', 'Maker')
