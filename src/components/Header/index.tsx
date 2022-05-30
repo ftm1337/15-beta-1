@@ -12,6 +12,7 @@ import WordmarkDark from '../../assets/svg/wordmark_white.svg'
 import { useActiveWeb3React } from '../../hooks'
 import { useDarkModeManager } from '../../state/user/hooks'
 import { useETHBalances } from '../../state/wallet/hooks'
+import { currencyId } from '../../utils/currencyId'
 
 import { YellowCard } from '../Card'
 import Settings from '../Settings'
@@ -161,7 +162,7 @@ export default function Header() {
             <AccountElement active={!!account} style={{ pointerEvents: 'auto' }}>
               {account && userEthBalance ? (
                 <BalanceText style={{ flexShrink: 0 }} pl="0.75rem" pr="0.5rem" fontWeight={500}>
-                  {userEthBalance?.toSignificant(4)} {currencyId[ETHER]}
+                  {userEthBalance?.toSignificant(4)} {currencyId(ETHER)}
                 </BalanceText>
               ) : null}
               <Web3Status />
